@@ -11,7 +11,7 @@
 //   // _dirpin2 = dirpin2;
 // }
 
-Motor::Motor(PinName dirpin1, PinName pwmpin, bool flagLAP = 0) : _dir1(dirpin1), _pwm(pwmpin) {
+Motor::Motor(PinName dirpin1, PinName pwmpin, bool flagLAP) : _dir1(dirpin1), _pwm(pwmpin) {
   _dir1 = 0;
   _flagLAP = flagLAP;
   if (flagLAP) _pwm = 0.5;
